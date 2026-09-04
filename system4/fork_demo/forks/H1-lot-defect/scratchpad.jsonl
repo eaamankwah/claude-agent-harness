@@ -1,0 +1,1 @@
+{"hypothesis_id":"H1-lot-defect","evidence":"All 5 defects trace to lot 2026-0430-B; DAR 0.39 vs spec >=0.85","conclusion":"Lot 2026-0430-B out of spec -- recommend quarantine","ts":"2026-08-10T03:20:06.028008Z"}

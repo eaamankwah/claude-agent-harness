@@ -1,0 +1,161 @@
+workspace student$ cd 'Build a Multi-Shift Quality Monitoring System with Claude Orchestration'/Build a Multi-Shift Quality Monitoring System with Claude Orchestration student$ cd 04-fork-scratchpad/
+04-fork-scratchpad student$ cd solution/
+solution student$ python -m venv .venv && source .venv/bin/activate 
+(.venv) solution student$ pip install -e ".[dev]" 
+Obtaining file:///workspace/Build%20a%20Multi-Shift%20Quality%20Monitoring%20System%20with%20Claude%20Orchestration/04-fork-scratchpad/solution
+  Installing build dependencies ... done
+  Checking if build backend supports build_editable ... done
+  Getting requirements to build editable ... done
+  Preparing editable metadata (pyproject.toml) ... done
+Collecting anthropic>=0.40 (from shift-monitor==0.1.0)
+  Downloading anthropic-0.121.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pydantic>=2.6 (from shift-monitor==0.1.0)
+  Using cached pydantic-2.13.4-py3-none-any.whl.metadata (109 kB)
+Collecting python-dateutil>=2.8 (from shift-monitor==0.1.0)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytest>=8 (from shift-monitor==0.1.0)
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting mypy>=1.10 (from shift-monitor==0.1.0)
+  Using cached mypy-2.3.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting ruff>=0.5 (from shift-monitor==0.1.0)
+  Using cached ruff-0.16.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (26 kB)
+Collecting anyio<5,>=3.5.0 (from anthropic>=0.40->shift-monitor==0.1.0)
+  Using cached anyio-4.14.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting distro<2,>=1.7.0 (from anthropic>=0.40->shift-monitor==0.1.0)
+  Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting docstring-parser<1,>=0.15 (from anthropic>=0.40->shift-monitor==0.1.0)
+  Using cached docstring_parser-0.18.0-py3-none-any.whl.metadata (3.5 kB)
+Collecting httpx<1,>=0.25.0 (from anthropic>=0.40->shift-monitor==0.1.0)
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting jiter<1,>=0.4.0 (from anthropic>=0.40->shift-monitor==0.1.0)
+  Using cached jiter-0.16.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.2 kB)
+Collecting sniffio<2,>=1 (from anthropic>=0.40->shift-monitor==0.1.0)
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting typing-extensions<5,>=4.14 (from anthropic>=0.40->shift-monitor==0.1.0)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting mypy_extensions>=1.0.0 (from mypy>=1.10->shift-monitor==0.1.0)
+  Using cached mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting pathspec>=1.0.0 (from mypy>=1.10->shift-monitor==0.1.0)
+  Using cached pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+Collecting librt>=0.13.0 (from mypy>=1.10->shift-monitor==0.1.0)
+  Using cached librt-0.15.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (1.3 kB)
+Collecting ast-serialize<1.0.0,>=0.6.0 (from mypy>=1.10->shift-monitor==0.1.0)
+  Using cached ast_serialize-0.8.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.4 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.6->shift-monitor==0.1.0)
+  Using cached annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.4 (from pydantic>=2.6->shift-monitor==0.1.0)
+  Using cached pydantic_core-2.46.4-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic>=2.6->shift-monitor==0.1.0)
+  Using cached typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting iniconfig>=1.0.1 (from pytest>=8->shift-monitor==0.1.0)
+  Using cached iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting packaging>=22 (from pytest>=8->shift-monitor==0.1.0)
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest>=8->shift-monitor==0.1.0)
+  Using cached pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest>=8->shift-monitor==0.1.0)
+  Using cached pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8->shift-monitor==0.1.0)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting idna>=2.8 (from anyio<5,>=3.5.0->anthropic>=0.40->shift-monitor==0.1.0)
+  Using cached idna-3.18-py3-none-any.whl.metadata (6.1 kB)
+Collecting certifi (from httpx<1,>=0.25.0->anthropic>=0.40->shift-monitor==0.1.0)
+  Using cached certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx<1,>=0.25.0->anthropic>=0.40->shift-monitor==0.1.0)
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.25.0->anthropic>=0.40->shift-monitor==0.1.0)
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Downloading anthropic-0.121.0-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 23.8 MB/s eta 0:00:00
+Using cached mypy-2.3.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (15.2 MB)
+Using cached pydantic-2.13.4-py3-none-any.whl (472 kB)
+Using cached pydantic_core-2.46.4-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached ruff-0.16.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.5 MB)
+Using cached annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Using cached anyio-4.14.2-py3-none-any.whl (125 kB)
+Using cached ast_serialize-0.8.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+Using cached distro-1.9.0-py3-none-any.whl (20 kB)
+Using cached docstring_parser-0.18.0-py3-none-any.whl (22 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Using cached jiter-0.16.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (343 kB)
+Using cached librt-0.15.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (531 kB)
+Using cached mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pathspec-1.1.1-py3-none-any.whl (57 kB)
+Using cached pluggy-1.6.0-py3-none-any.whl (20 kB)
+Using cached pygments-2.20.0-py3-none-any.whl (1.2 MB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Using cached idna-3.18-py3-none-any.whl (65 kB)
+Using cached certifi-2026.7.22-py3-none-any.whl (136 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Building wheels for collected packages: shift-monitor
+  Building editable for shift-monitor (pyproject.toml) ... done
+  Created wheel for shift-monitor: filename=shift_monitor-0.1.0-0.editable-py3-none-any.whl size=3260 sha256=2608b97dfee1993016c2af178654cb2cf2050f2df42ce6829c45da4143a62d76
+  Stored in directory: /tmp/pip-ephem-wheel-cache-3qp4y64q/wheels/bf/f0/16/1ab6308694f6d20e1aa574982969444afce1313e1042ce8ed1
+Successfully built shift-monitor
+Installing collected packages: typing-extensions, sniffio, six, ruff, pygments, pluggy, pathspec, packaging, mypy_extensions, librt, jiter, iniconfig, idna, h11, docstring-parser, distro, certifi, ast-serialize, annotated-types, typing-inspection, python-dateutil, pytest, pydantic-core, mypy, httpcore, anyio, pydantic, httpx, anthropic, shift-monitor
+Successfully installed annotated-types-0.8.0 anthropic-0.121.0 anyio-4.14.2 ast-serialize-0.8.0 certifi-2026.7.22 distro-1.9.0 docstring-parser-0.18.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.18 iniconfig-2.3.0 jiter-0.16.0 librt-0.15.0 mypy-2.3.0 mypy_extensions-1.1.0 packaging-26.3 pathspec-1.1.1 pluggy-1.6.0 pydantic-2.13.4 pydantic-core-2.46.4 pygments-2.20.0 pytest-9.1.1 python-dateutil-2.9.0.post0 ruff-0.16.2 shift-monitor-0.1.0 six-1.17.0 sniffio-1.3.1 typing-extensions-4.16.0 typing-inspection-0.4.2
+
+[notice] A new release of pip is available: 24.2 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+(.venv) solution student$ pytest tests/ -v  
+===================================== test session starts ======================================
+platform linux -- Python 3.13.0, pytest-9.1.1, pluggy-1.6.0 -- /workspace/Build a Multi-Shift Quality Monitoring System with Claude Orchestration/04-fork-scratchpad/solution/.venv/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /workspace/Build a Multi-Shift Quality Monitoring System with Claude Orchestration/04-fork-scratchpad/solution
+configfile: pyproject.toml
+plugins: anyio-4.14.2
+collected 33 items                                                                             
+
+tests/test_us01_tiered_state.py::test_hotstate_roundtrip_and_size_budget PASSED          [  3%]
+tests/test_us01_tiered_state.py::test_hotstate_rejects_more_than_20_hashes PASSED        [  6%]
+tests/test_us01_tiered_state.py::test_hotstate_atomic_write PASSED                       [  9%]
+tests/test_us01_tiered_state.py::test_warmstore_creates_table_and_index PASSED           [ 12%]
+tests/test_us01_tiered_state.py::test_warmstore_insert_many_roundtrips PASSED            [ 15%]
+tests/test_us01_tiered_state.py::test_coldstore_writes_monthly_summary PASSED            [ 18%]
+tests/test_us01_tiered_state.py::test_coldstore_handles_empty_month PASSED               [ 21%]
+tests/test_us01_tiered_state.py::test_defects_since_uses_index_and_does_not_load_full_table PASSED [ 24%]
+tests/test_us01_tiered_state.py::test_defects_since_respects_limit PASSED                [ 27%]
+tests/test_us02_invocation_pipeline.py::test_gather_new_defects_is_pure_passthrough_to_sql PASSED [ 30%]
+tests/test_us02_invocation_pipeline.py::test_gather_new_defects_has_no_python_side_filtering PASSED [ 33%]
+tests/test_us02_invocation_pipeline.py::test_invocation_shapes_are_distinct PASSED       [ 36%]
+tests/test_us02_invocation_pipeline.py::test_build_rich_prompt_stays_under_4000_chars PASSED [ 39%]
+tests/test_us02_invocation_pipeline.py::test_run_shift_invokes_client_exactly_once_and_writes_state PASSED [ 42%]
+tests/test_us02_invocation_pipeline.py::test_run_shift_cli_entry_point_works PASSED      [ 45%]
+tests/test_us03_crash_recovery.py::test_append_step_writes_and_fsyncs PASSED             [ 48%]
+tests/test_us03_crash_recovery.py::test_mid_write_read_reveals_prior_complete_lines PASSED [ 51%]
+tests/test_us03_crash_recovery.py::test_load_returns_incomplete_state PASSED             [ 54%]
+tests/test_us03_crash_recovery.py::test_load_returns_complete_state PASSED               [ 57%]
+tests/test_us03_crash_recovery.py::test_load_on_missing_file_returns_empty PASSED        [ 60%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[1-False-resume] PASSED [ 63%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[29-False-resume] PASSED [ 66%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[30-False-resume] PASSED [ 69%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[31-False-fresh] PASSED [ 72%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[1-True-fresh] PASSED [ 75%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_truth_table[60-True-fresh] PASSED [ 78%]
+tests/test_us03_crash_recovery.py::test_recovery_decide_empty_manifest_is_fresh PASSED   [ 81%]
+tests/test_us03_crash_recovery.py::test_threshold_constant_is_30_minutes PASSED          [ 84%]
+tests/test_us03_crash_recovery.py::test_resumed_prompt_has_both_sections PASSED          [ 87%]
+tests/test_us04_fork_scratchpad.py::test_scratchpad_append_and_read_order PASSED         [ 90%]
+tests/test_us04_fork_scratchpad.py::test_fork_for_hypothesis_copies_state_without_mutating_base PASSED [ 93%]
+tests/test_us04_fork_scratchpad.py::test_two_forks_produce_independent_scratchpads PASSED [ 96%]
+tests/test_us04_fork_scratchpad.py::test_merge_findings_appends_without_rewriting_existing PASSED [100%]
+
+====================================== 33 passed in 0.56s ======================================
+(.venv) solution student$ python -c "import json; from pathlib import Path; from shift_monitor.warm import WarmStore; \
+w=WarmStore(Path('data/warm.sqlite')); w.initialize(); \
+w.insert_many(json.load(open('fixtures/defects.json')))" 
+(.venv) solution student$ python -m shift_monitor run-shift --shift C --warm-db data/warm.sqlite \
+  --recorded-response fixtures/recorded_responses/shift_C_2026-04-30.json 
+2026-08-10 02:28:56,668 shift_monitor.pipeline INFO run_shift start: shift=C since=2026-08-09T18:28:56Z
+2026-08-10 02:28:56,693 shift_monitor.pipeline INFO run_shift done: shift=C new=0
+shift C: 0 new defects
+Shift C 2026-04-30: 3 high + 2 medium defects on capacitor-bank-C-7, all from lot 2026-0430-B (DAR 0.39, ESR ~19 mOhm); 1 low VP-4 vent squeal (repeat). Lot quarantine recommended.
+(.venv) solution student$

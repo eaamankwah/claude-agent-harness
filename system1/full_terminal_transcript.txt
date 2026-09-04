@@ -1,0 +1,35 @@
+=(.venv) solution student$ python -m claims_intake.run --all 
+run_dir: /workspace/Build a Claims Intake Agent with a stop_reason-Driven Loop/exercises/03-dynamic-decomposition/solution/runs/20260810_020002
+[claim_01_kitchen_fire] policy=POL-1001 expected=routed
+  → outcome=incomplete turns=2 clarifications=0 tokens=6266/436 est=$0.0084
+[claim_02_stolen_bike] policy=POL-1007 expected=routed
+  → outcome=incomplete turns=3 clarifications=0 tokens=9122/427 est=$0.0113
+[claim_03_water_damage] policy=POL-1004 expected=routed
+  → outcome=routed turns=6 clarifications=1 tokens=21837/1065 est=$0.0272
+[claim_04_neighbor_injury] policy=POL-1002 expected=routed
+  → outcome=routed turns=5 clarifications=0 tokens=18428/956 est=$0.0232
+[claim_05_auto_collision] policy=POL-1003 expected=routed
+  → outcome=routed turns=4 clarifications=0 tokens=15277/1024 est=$0.0204
+[claim_06_low_confidence_escalation] policy=POL-1008 expected=escalated
+  → outcome=incomplete turns=2 clarifications=0 tokens=6508/674 est=$0.0099
+[claim_07_tree_falls_on_car] policy=POL-1005 expected=routed
+  → outcome=incomplete turns=2 clarifications=0 tokens=6179/395 est=$0.0082
+[claim_08_minor_porch_damage] policy=POL-1006 expected=routed
+  → outcome=routed turns=4 clarifications=0 tokens=14445/885 est=$0.0189
+summary: /workspace/Build a Claims Intake Agent with a stop_reason-Driven Loop/exercises/03-dynamic-decomposition/solution/runs/20260810_020002/summary.md
+total estimated cost: $0.1274
+(.venv) solution student$ pytest tests/ -v  
+======================================= test session starts =======================================
+platform linux -- Python 3.13.0, pytest-9.1.1, pluggy-1.6.0
+rootdir: /workspace/Build a Claims Intake Agent with a stop_reason-Driven Loop/exercises/03-dynamic-decomposition/solution
+configfile: pyproject.toml
+plugins: anyio-4.14.2
+collected 29 items                                                                                
+
+tests/test_antipatterns.py ....                                                             [ 13%]
+tests/test_fixtures.py ........                                                             [ 41%]
+tests/test_loop.py .....                                                                    [ 58%]
+tests/test_tools.py ............                                                            [100%]
+
+======================================= 29 passed in 0.16s ========================================
+(.venv) solution student$ 

@@ -1,0 +1,81 @@
+workspace student$ cd 'Configure Claude Code for a Multi-Surface Monorepo Team'/
+Configure Claude Code for a Multi-Surface Monorepo Team student$ cd 04-plan-mode-and-explore-decision-doc/
+04-plan-mode-and-explore-decision-doc student$ cd solution/
+solution student$ pip install -e ".[dev]" 
+Obtaining file:///workspace/Configure%20Claude%20Code%20for%20a%20Multi-Surface%20Monorepo%20Team/04-plan-mode-and-explore-decision-doc/solution
+  Installing build dependencies ... done
+  Checking if build backend supports build_editable ... done
+  Getting requirements to build editable ... done
+  Preparing editable metadata (pyproject.toml) ... done
+Requirement already satisfied: pathspec>=0.12 in /opt/venv/lib/python3.13/site-packages (from ecommerce-team-config==0.1.0) (1.1.1)
+Requirement already satisfied: pyyaml>=6.0 in /opt/venv/lib/python3.13/site-packages (from ecommerce-team-config==0.1.0) (6.0.3)
+Requirement already satisfied: pytest>=8 in /opt/venv/lib/python3.13/site-packages (from ecommerce-team-config==0.1.0) (8.4.2)
+Requirement already satisfied: mypy>=1.10 in /opt/venv/lib/python3.13/site-packages (from ecommerce-team-config==0.1.0) (1.20.2)
+Requirement already satisfied: ruff>=0.5 in /opt/venv/lib/python3.13/site-packages (from ecommerce-team-config==0.1.0) (0.15.17)
+Requirement already satisfied: types-PyYAML>=6.0 in /opt/venv/lib/python3.13/site-packages (from ecommerce-team-config==0.1.0) (6.0.12.20260518)
+Requirement already satisfied: typing_extensions>=4.6.0 in /opt/venv/lib/python3.13/site-packages (from mypy>=1.10->ecommerce-team-config==0.1.0) (4.15.0)
+Requirement already satisfied: mypy_extensions>=1.0.0 in /opt/venv/lib/python3.13/site-packages (from mypy>=1.10->ecommerce-team-config==0.1.0) (1.1.0)
+Requirement already satisfied: librt>=0.8.0 in /opt/venv/lib/python3.13/site-packages (from mypy>=1.10->ecommerce-team-config==0.1.0) (0.11.0)
+Requirement already satisfied: iniconfig>=1 in /opt/venv/lib/python3.13/site-packages (from pytest>=8->ecommerce-team-config==0.1.0) (2.3.0)
+Requirement already satisfied: packaging>=20 in /opt/venv/lib/python3.13/site-packages (from pytest>=8->ecommerce-team-config==0.1.0) (26.2)
+Requirement already satisfied: pluggy<2,>=1.5 in /opt/venv/lib/python3.13/site-packages (from pytest>=8->ecommerce-team-config==0.1.0) (1.6.0)
+Requirement already satisfied: pygments>=2.7.2 in /opt/venv/lib/python3.13/site-packages (from pytest>=8->ecommerce-team-config==0.1.0) (2.20.0)
+Building wheels for collected packages: ecommerce-team-config
+  Building editable for ecommerce-team-config (pyproject.toml) ... done
+  Created wheel for ecommerce-team-config: filename=ecommerce_team_config-0.1.0-0.editable-py3-none-any.whl size=3398 sha256=6f759736603ed79b7721a4454800353f9e8b3b473dcbf122fa9a1ac300d8cc2f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-t5u7f9l9/wheels/9a/46/9d/8e1ee2d60111eac759df9ae228edf2d0b1e9246a3a17d93430
+Successfully built ecommerce-team-config
+Installing collected packages: ecommerce-team-config
+Successfully installed ecommerce-team-config-0.1.0
+
+[notice] A new release of pip is available: 24.2 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+solution student$ pytest tests/ -v   
+===================================== test session starts ======================================
+platform linux -- Python 3.13.0, pytest-8.4.2, pluggy-1.6.0 -- /opt/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace/Configure Claude Code for a Multi-Surface Monorepo Team/04-plan-mode-and-explore-decision-doc/solution
+configfile: pyproject.toml
+plugins: anyio-4.14.1
+collected 35 items                                                                             
+
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_01_root_claude_md_has_at_least_one_import PASSED [  2%]
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_02_two_standards_files_each_imported PASSED [  5%]
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_03_no_dangling_imports PASSED         [  8%]
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_04_claude_md_under_200_lines PASSED   [ 11%]
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_05_documents_scope_and_user_level_not_versioned PASSED [ 14%]
+tests/test_us01_claude_md_hierarchy.py::test_ac_01_06_references_memory_command PASSED   [ 17%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_01_react_rule_has_component_and_page_globs PASSED [ 20%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_02_api_rule_has_api_glob PASSED         [ 22%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_03_tests_rule_has_test_globs PASSED     [ 25%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_04_react_file_matches_only_react_rule PASSED [ 28%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_05_api_file_matches_only_api_rule PASSED [ 31%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_06_test_file_matches_react_and_tests PASSED [ 34%]
+tests/test_us02_path_scoped_rules.py::test_ac_02_07_each_rule_has_concrete_body PASSED   [ 37%]
+tests/test_us03_review_command.py::test_ac_03_01_exists_with_valid_frontmatter PASSED    [ 40%]
+tests/test_us03_review_command.py::test_ac_03_02_description_and_argument_hint PASSED    [ 42%]
+tests/test_us03_review_command.py::test_ac_03_03_allowed_tools_is_read_oriented PASSED   [ 45%]
+tests/test_us03_review_command.py::test_ac_03_04_must_report_vs_skip_criteria PASSED     [ 48%]
+tests/test_us03_review_command.py::test_ac_03_05_two_concrete_io_examples PASSED         [ 51%]
+tests/test_us03_review_command.py::test_ac_03_06_is_project_scoped PASSED                [ 54%]
+tests/test_us03_review_command.py::test_ac_03_07_interview_pattern_subsection PASSED     [ 57%]
+tests/test_us03_review_command.py::test_ac_03_08_interacting_vs_independent_guidance PASSED [ 60%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_01_exists_with_valid_frontmatter PASSED [ 62%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_02_name_description_context_fork PASSED [ 65%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_03_allowed_tools_read_only PASSED      [ 68%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_04_three_pre_deployment_checks PASSED  [ 71%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_05_rationale_cites_main_session_and_branching_reality PASSED [ 74%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_06_personal_customization_note PASSED  [ 77%]
+tests/test_us04_deploy_check_skill.py::test_ac_04_07_skill_vs_claude_md_rubric PASSED    [ 80%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_01_doc_exists PASSED                        [ 82%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_02_plan_mode_example_three_files_and_rework_phrasing PASSED [ 85%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_03_direct_execution_example PASSED          [ 88%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_04_explore_example_with_scratchpad PASSED   [ 91%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_05_knight_webb_curriculum_citation PASSED   [ 94%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_06_all_cited_file_paths_exist PASSED        [ 97%]
+tests/test_us05_plan_mode_doc.py::test_ac_05_07_combined_workflow_example PASSED         [100%]
+
+====================================== 35 passed in 0.19s ======================================
+solution student$ python -m ecommerce_team_config .  
+OK
+solution student$
