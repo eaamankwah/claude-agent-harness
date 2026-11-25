@@ -232,17 +232,14 @@ State splits into two tiers: a small **"hot" JSON file** (≤5 KB, ≤20 retaine
 
 ```
 .
-├── Build a Claims Intake Agent with a stop_reason-Driven Loop/
-│   └── exercises/03-dynamic-decomposition/solution/     ← System 1
-├── Engineer a Long-Conversation Context Strategy for a Retail Support Copilot/
-│   └── 04-assemble-and-locate/solution/                 ← System 2
-├── Configure Claude Code for a Multi-Surface Monorepo Team/
-│   └── 04-plan-mode-and-explore-decision-doc/solution/  ← System 3
-├── Build a Multi-Shift Quality Monitoring System with Claude Orchestration/
-│   └── 04-fork-scratchpad/solution/                     ← System 4
-└── Project-Harness Engineering with Claude and Claude Code/
-    ├── README.md
-    └── reflection-brief.md                              ← Completed capstone brief
+├── system1/                                   # Claims Intake Agent (stop_reason-driven loop)
+├── system2/                                   # Retail Support Context Strategy
+├── system3/                                   # Claude Code Monorepo Configuration
+├── system4/                                   # Multi-Shift Quality Monitoring Orchestration
+├── Harness-Engineering-Capstone-Report.pdf    # Full 30-page technical report
+├── reflection-brief.md                        # Completed capstone brief
+├── LICENSE
+└── README.md
 ```
 
 Each `solution/` directory is a self-contained Python package with its own `pyproject.toml`, `tests/`, and (for Systems 1–2) `runs/` output directory.
